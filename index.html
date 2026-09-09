@@ -16,45 +16,82 @@
     </header>
 
     <!-- Seção de Destaque (Hero) -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Envelopamento Profissional</h2>
-            <p>De veículos a ambientes corporativos, festas e eletrodomésticos. Qualidade e precisão absoluta.</p>
-            <a href="#contato" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp</a>
-        </div>
-    </section>
-
-    <!-- Seção do Portfólio -->
+        <!-- Seção do Portfólio -->
     <section class="portfolio">
         <h2>Nosso Portfólio</h2>
         <div class="grid">
             
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=1" alt="Ônibus e Frotas">
+            <!-- Card 1 -->
+            <div class="card" onclick="ativarCard(this)">
+                <div class="carousel-container">
+                    <div class="carousel-track" data-index="0">
+                        <img src="https://picsum.photos/400/300?random=11" alt="Ônibus 1">
+                        <img src="https://picsum.photos/400/300?random=12" alt="Ônibus 2">
+                        <img src="https://picsum.photos/400/300?random=13" alt="Ônibus 3">
+                        <img src="https://picsum.photos/400/300?random=14" alt="Ônibus 4">
+                        <img src="https://picsum.photos/400/300?random=15" alt="Ônibus 5">
+                    </div>
+                    <button class="carousel-btn prev" onclick="moverCarrossel(event, this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moverCarrossel(event, this, 1)">&#10095;</button>
+                </div>
                 <h3>Ônibus e Frotas</h3>
                 <p>Aplicação de adesivos em traseiras de ônibus e envelopamento automotivo completo.</p>
             </div>
             
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=2" alt="Eletrodomésticos">
+            <!-- Card 2 -->
+            <div class="card" onclick="ativarCard(this)">
+                <div class="carousel-container">
+                    <div class="carousel-track" data-index="0">
+                        <img src="https://picsum.photos/400/300?random=21" alt="Eletrodoméstico 1">
+                        <img src="https://picsum.photos/400/300?random=22" alt="Eletrodoméstico 2">
+                        <img src="https://picsum.photos/400/300?random=23" alt="Eletrodoméstico 3">
+                        <img src="https://picsum.photos/400/300?random=24" alt="Eletrodoméstico 4">
+                        <img src="https://picsum.photos/400/300?random=25" alt="Eletrodoméstico 5">
+                    </div>
+                    <button class="carousel-btn prev" onclick="moverCarrossel(event, this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moverCarrossel(event, this, 1)">&#10095;</button>
+                </div>
                 <h3>Eletrodomésticos</h3>
                 <p>Renovação de geladeiras, fogões, micro-ondas e eletros em geral.</p>
             </div>
             
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=3" alt="Ambientes">
+            <!-- Card 3 -->
+            <div class="card" onclick="ativarCard(this)">
+                <div class="carousel-container">
+                    <div class="carousel-track" data-index="0">
+                        <img src="https://picsum.photos/400/300?random=31" alt="Ambiente 1">
+                        <img src="https://picsum.photos/400/300?random=32" alt="Ambiente 2">
+                        <img src="https://picsum.photos/400/300?random=33" alt="Ambiente 3">
+                        <img src="https://picsum.photos/400/300?random=34" alt="Ambiente 4">
+                        <img src="https://picsum.photos/400/300?random=35" alt="Ambiente 5">
+                    </div>
+                    <button class="carousel-btn prev" onclick="moverCarrossel(event, this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moverCarrossel(event, this, 1)">&#10095;</button>
+                </div>
                 <h3>Paredes e Ambientes</h3>
                 <p>Decoração e envelopamento de paredes em apartamentos, casas e móveis variados.</p>
             </div>
             
-            <div class="card">
-                <img src="https://picsum.photos/400/300?random=4" alt="Festas e Eventos">
+            <!-- Card 4 -->
+            <div class="card" onclick="ativarCard(this)">
+                <div class="carousel-container">
+                    <div class="carousel-track" data-index="0">
+                        <img src="https://picsum.photos/400/300?random=41" alt="Festa 1">
+                        <img src="https://picsum.photos/400/300?random=42" alt="Festa 2">
+                        <img src="https://picsum.photos/400/300?random=43" alt="Festa 3">
+                        <img src="https://picsum.photos/400/300?random=44" alt="Festa 4">
+                        <img src="https://picsum.photos/400/300?random=45" alt="Festa 5">
+                    </div>
+                    <button class="carousel-btn prev" onclick="moverCarrossel(event, this, -1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moverCarrossel(event, this, 1)">&#10095;</button>
+                </div>
                 <h3>Festas e Eventos</h3>
                 <p>Instalação de sarrafos, painéis de entrada e cenografia interna para eventos.</p>
             </div>
 
         </div>
     </section>
+
 
     <!-- Rodapé com Redes Sociais e Direitos Autorais -->
     <footer id="contato">
