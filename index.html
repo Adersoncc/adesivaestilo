@@ -13,11 +13,31 @@
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho Principal (Aparece no topo absoluto ao carregar) -->
     <header class="main-header">
-        <h1>Adesiva Estilo</h1>
-        <p>Transformando ideias em realidade visual</p>
+        <div class="header-content">
+            <h1>Adesiva Estilo</h1>
+            <p>Transformando ideias em realidade visual</p>
+        </div>
     </header>
+
+    <!-- Barra de Navegação que vira Fixa ao rolar a página -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">
+                <!-- Espaço da Logo (Criado com Pixan/CSS, pronto para receber sua imagem depois) -->
+                <div class="brand-logo-placeholder">
+                    <span>AE</span>
+                </div>
+                <span class="brand-title">Adesiva Estilo</span>
+            </a>
+            <div class="navbar-actions">
+                <a href="https://wa.me/5598000000000" target="_blank" class="btn-nav-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> Fale Conosco
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Seção Principal (Hero) -->
     <section class="hero" id="contato">
