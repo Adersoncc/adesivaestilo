@@ -3,112 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adesiva Estilo - Especialista em Envelopamento</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Biblioteca Font Awesome para exibir os ícones das redes sociais -->
+    <title>Adesiva Estilo | Transformando Ideias em Realidade Visual</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <!-- Cabeçalho -->
+    <header class="main-header">
         <h1>Adesiva Estilo</h1>
         <p>Transformando ideias em realidade visual</p>
     </header>
 
-    <!-- Seção de Destaque (Hero) -->
-    <section class="hero">
+    <!-- Seção Principal (Hero) -->
+    <section class="hero" id="contato">
         <div class="hero-content">
             <h2>Envelopamento Profissional</h2>
-            <p>De veículos a ambientes corporativos, festas e eletrodomésticos. Qualidade e precisão absoluta.</p>
-            <a href="#contato" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Fale Conosco no WhatsApp</a>
+            <p>De veículos a ambientes corporativos, festas e eletrodomésticos. Qualidade e precisão absoluta para dar vida à sua marca ou renovar o seu espaço.</p>
+            <a href="https://wa.me/5598000000000" target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp fa-lg"></i> Fale Conosco no WhatsApp
+            </a>
         </div>
     </section>
 
-    <!-- Seção do Portfólio com Carrosséis nos Cards -->
+    <!-- Seção de Portfólio -->
     <section class="portfolio">
         <h2>Nosso Portfólio</h2>
-        <div class="grid">
+        <div class="portfolio-grid">
             
-            <!-- Card 1: Ônibus e Frotas -->
-            <div class="card">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <img src="https://picsum.photos/400/300?random=1" alt="Ônibus e Frotas 1">
-                        <img src="https://picsum.photos/400/300?random=11" alt="Ônibus e Frotas 2">
-                        <img src="https://picsum.photos/400/300?random=12" alt="Ônibus e Frotas 3">
-                    </div>
-                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <!-- Categoria 1 -->
+            <div class="portfolio-card">
+                <div class="card-images">
+                    <img alt="Ônibus e Frotas 1" src="https://picsum.photos/400/300?random=1">
+                    <img alt="Ônibus e Frotas 2" src="https://picsum.photos/400/300?random=11">
+                    <img alt="Ônibus e Frotas 3" src="https://picsum.photos/400/300?random=12">
                 </div>
-                <h3>Ônibus e Frotas</h3>
-                <p>Aplicação de adesivos em traseiras de ônibus e envelopamento automotivo completo.</p>
+                <div class="card-body">
+                    <h3>Ônibus e Frotas</h3>
+                    <p>Aplicação de adesivos em traseiras de ônibus e envelopamento automotivo completo.</p>
+                </div>
             </div>
             
-            <!-- Card 2: Eletrodomésticos -->
-            <div class="card">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <img src="https://picsum.photos/400/300?random=2" alt="Eletrodomésticos 1">
-                        <img src="https://picsum.photos/400/300?random=21" alt="Eletrodomésticos 2">
-                        <img src="https://picsum.photos/400/300?random=22" alt="Eletrodomésticos 3">
-                    </div>
-                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <!-- Categoria 2 -->
+            <div class="portfolio-card">
+                <div class="card-images">
+                    <img alt="Eletrodomésticos 1" src="https://picsum.photos/400/300?random=2">
+                    <img alt="Eletrodomésticos 2" src="https://picsum.photos/400/300?random=21">
+                    <img alt="Eletrodomésticos 3" src="https://picsum.photos/400/300?random=22">
                 </div>
-                <h3>Eletrodomésticos</h3>
-                <p>Renovação de geladeiras, fogões, micro-ondas e eletros em geral.</p>
+                <div class="card-body">
+                    <h3>Eletrodomésticos</h3>
+                    <p>Renovação de geladeiras, fogões, micro-ondas e eletros em geral com acabamento impecável.</p>
+                </div>
             </div>
             
-            <!-- Card 3: Ambientes -->
-            <div class="card">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <img src="https://picsum.photos/400/300?random=3" alt="Paredes e Ambientes 1">
-                        <img src="https://picsum.photos/400/300?random=31" alt="Paredes e Ambientes 2">
-                        <img src="https://picsum.photos/400/300?random=32" alt="Paredes e Ambientes 3">
-                    </div>
-                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <!-- Categoria 3 -->
+            <div class="portfolio-card">
+                <div class="card-images">
+                    <img alt="Paredes e Ambientes 1" src="https://picsum.photos/400/300?random=3">
+                    <img alt="Paredes e Ambientes 2" src="https://picsum.photos/400/300?random=31">
+                    <img alt="Paredes e Ambientes 3" src="https://picsum.photos/400/300?random=32">
                 </div>
-                <h3>Paredes e Ambientes</h3>
-                <p>Decoração e envelopamento de paredes em apartamentos, casas e móveis variados.</p>
+                <div class="card-body">
+                    <h3>Paredes e Ambientes</h3>
+                    <p>Decoração e envelopamento de paredes em apartamentos, casas e móveis variados.</p>
+                </div>
             </div>
             
-            <!-- Card 4: Festas e Eventos -->
-            <div class="card">
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <img src="https://picsum.photos/400/300?random=4" alt="Festas e Eventos 1">
-                        <img src="https://picsum.photos/400/300?random=41" alt="Festas e Eventos 2">
-                        <img src="https://picsum.photos/400/300?random=42" alt="Festas e Eventos 3">
-                    </div>
-                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
-                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            <!-- Categoria 4 -->
+            <div class="portfolio-card">
+                <div class="card-images">
+                    <img alt="Festas e Eventos 1" src="https://picsum.photos/400/300?random=4">
+                    <img alt="Festas e Eventos 2" src="https://picsum.photos/400/300?random=41">
+                    <img alt="Festas e Eventos 3" src="https://picsum.photos/400/300?random=42">
                 </div>
-                <h3>Festas e Eventos</h3>
-                <p>Instalação de sarrafos, painéis de entrada e cenografia interna para eventos.</p>
+                <div class="card-body">
+                    <h3>Festas e Eventos</h3>
+                    <p>Instalação de sarrafos, painéis de entrada e cenografia interna de alta qualidade para eventos.</p>
+                </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Rodapé com Redes Sociais e Direitos Autorais -->
-    <footer id="contato">
+    <!-- Rodapé -->
+    <footer>
         <h3>Siga nosso trabalho e solicite um orçamento</h3>
-        <div class="social-bar">
-            <!-- As 6 Redes Sociais Solicitadas -->
-            <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" class="social-icon" title="Telegram"><i class="fab fa-telegram"></i></a>
-            <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <div class="social-icons">
+            <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
-        <div class="copyright">
-            <p>&copy; 2026 Adesiva Estilo. Todos os direitos reservados a Áderson Cantanhede Costa.</p>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year">2026</span> Adesiva Estilo. Todos os direitos reservados a Áderson Cantanhede Costa.</p>
         </div>
     </footer>
 
+    <!-- Arquivo JavaScript Externo -->
     <script src="script.js"></script>
 </body>
 </html>
