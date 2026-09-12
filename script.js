@@ -1,20 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Atualiza automaticamente o ano no rodapé
-    const yearSpan = document.getElementById("current-year");
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-
-    // Lógica opcional para efeitos na navbar ao rolar (se necessário futuramente)
-    const navbar = document.getElementById("navbar");
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    const mainHeader = document.querySelector('.main-header');
     
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 150) {
-            navbar.classList.add("scrolled");
-        } else {
-            navbar.classList.remove("scrolled");
-        }
-    });
+    // Altura do cabeçalho principal para definir o momento em que a barra gruda
+    const headerHeight = mainHeader.offsetHeight;
 
-    console.log("Adesiva Estilo - Navbar fixa e estilizada carregada com sucesso!");
+    if (window.scrollY >= headerHeight) {
+        navbar.classList.add('fixed');
+    } else {
+        navbar.classList.remove('fixed');
+    }
 });
