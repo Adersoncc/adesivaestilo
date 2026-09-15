@@ -1,9 +1,19 @@
-// Atualiza automaticamente o ano no rodapé para manter o site sempre atualizado
-document.addEventListener("DOMContentLoaded", () => {
-    const yearSpan = document.getElementById("current-year");
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
+// Arquivo script.js - Adesiva Estilo
 
-    console.log("Adesiva Estilo - Site carregado com sucesso!");
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Site da Adesiva Estilo carregado com sucesso!");
+
+    // Exemplo de interação: efeito suave ao clicar em links internos (se houver)
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
 });
